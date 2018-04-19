@@ -27,7 +27,8 @@ django.jQuery(function () {
                     change: function () {
                         f.value = JSON.stringify(editor.get());
                     },
-                    // modes: ['tree','code'] // is not working properly
+                    mode: 'text',
+                    modes: ['tree','text']
                 }, value);
 
                 return editor;
