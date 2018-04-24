@@ -27,9 +27,10 @@ django.jQuery(function () {
                     change: function () {
                         f.value = JSON.stringify(editor.get());
                     },
-                    mode: 'text',
+                    mode: 'tree',
                     modes: ['tree','text']
                 }, value);
+                editor.expandAll();
 
                 return editor;
             };
